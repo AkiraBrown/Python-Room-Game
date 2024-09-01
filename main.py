@@ -18,8 +18,9 @@ class GameState:
     def __init__(self):
         self.rooms = [
             {"name": "Kitchen", "item": ["key"], "description": None},
-            {"name": "hallway", "items": [], "description": "You are in a grand hallway."},
-            {"name": "library", "items": ["scroll"], "description": "This is the castle's library. It contains many ancient tomes and scrolls."}
+            {"name": "hallway", "items": ["carpet"], "description": "You are in a grand hallway."},
+            {"name": "library", "items": ["scroll"], "description": "This is the castle's library. It contains many ancient tomes and scrolls."},
+            {"name": "living room", "items": ["clock"], "description": "This is the living room that's not so living. It's getting late."}
         ]
         self.score = 0
         self.room_connections()
